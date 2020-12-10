@@ -11,7 +11,7 @@ public class ExercFatorial {
 		
 		
 		for(i=0; i<TAM; i++) {
-			System.out.println("Insira o primeiro número para obter seu fatorial:");
+			System.out.println("Insira o um número para obter seu fatorial:");
 			a[i] = in.nextInt();
 			
 			for(i2=1; i2<=a[i]; i2++) {
