@@ -1,21 +1,21 @@
 import java.util.Scanner;
-public class ExercInterseccao {
+public class ExercFatorial {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		final int TAM = 3; 
-		int i, a[], b[], c[], j, x = 0, iguais=0;
+		int i, a[], b[], c[], i2, x = 0, iguais=0;
 		
 		a = new int [TAM];
 		b = new int [TAM];
 		c = new int [TAM];
 		
 		for(i=0; i<TAM; i++) {
-			System.out.println("Digite o "+(i+1)+"º elemento de A:");
+			System.out.println("Digite o um número para A:");
 			a[i] = in.nextInt();
 		}
 		
 		for(i=0; i<TAM; i++) {
-			System.out.println("Digite o "+(i+1)+"º elemento de B:");
+			System.out.println("Digite o digite um número para B:");
 			b[i] = in.nextInt();
 		}
 		
@@ -36,8 +36,8 @@ public class ExercInterseccao {
 		System.out.print("A ∩ B = "); 
 		
 		for(i=0; i<TAM; i++) {
-			for (j=0; j<TAM; j++) {
-				if (a[i] == b[j]) {
+			for (i2=0; i2<TAM; i2++) {
+				if (a[i] == b[i2]) {
 					iguais++;
 				}
 				
@@ -45,11 +45,11 @@ public class ExercInterseccao {
 		}
 		
 		if (iguais == 0) {
-			System.out.println("Não há valores iguais, logo o vetor C está vazio");
+			System.out.println("Não há valores iguais, o vetor C está vazio");
 		}else {
 			for(i=0; i<TAM; i++) {
-				for (j=0; j<TAM; j++) {
-					if (a[i] == b[j]) {
+				for (i2=0; i2<TAM; i2++) {
+					if (a[i] == b[i2]) {
 						c[x] = a[i];
 						System.out.print(c[x]+" ");
 						x++;
@@ -60,3 +60,4 @@ public class ExercInterseccao {
 			
 		}
 	}
+}
