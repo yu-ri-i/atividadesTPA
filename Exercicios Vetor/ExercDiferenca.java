@@ -3,7 +3,7 @@ public class ExercDiferenca {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		final int TAM = 10; 
-		int i, j, a[], b[], c[], x=0, diferenca=0;
+		int i, i2, a[], b[], c[], x=0, diferenca=0;
 		boolean igual = false; 
 		
 		a = new int[TAM];
@@ -20,7 +20,7 @@ public class ExercDiferenca {
 			b[i] = in.nextInt();
 		}
 		
-		System.out.print("")
+		System.out.print("A = ");
 		for(i=0;i<TAM;i++) {
 			System.out.print(a[i]+" ");
 		}
@@ -34,8 +34,8 @@ public class ExercDiferenca {
 	
 	
 		for(i=0; i<TAM; i++) {
-			for (j=0; j<TAM; j++) {
-				if (a[i] == b[j]) {
+			for (i2=0; i2<TAM; i2++) {
+				if (a[i] == b[i2]) {
 					igual = true;
 				}
 			}
