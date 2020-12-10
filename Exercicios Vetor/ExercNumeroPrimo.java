@@ -3,30 +3,29 @@ public class ExercNumeroPrimo {
 	public static void main(String[] args) {
 		Scanner in = new Scanner (System.in);
 		final int E = 10; 
-		int i, a[], j, resto0= 0;
+		int i, a[], i2, r=0;
 		
 		a = new int[E];
 		
-		for(j=0; j<E; j++) {
-			System.out.println("Insira um número e veja se ele é primo ou não:");
-			a[j] = in.nextInt();
+		for(i2=0; i2<E; i2++) {
+			System.out.println("Digite um número para verificar se ele é primo ou não:");
+			a[i2] = in.nextInt();
 			
-			for (i=1; i<a[j]; i++) {
-				if (a[j] % i == 0) {
-					resto0++;
+			for (i=1; i<a[i2]; i++) {
+				if (a[i2] % i == 0) {
+					r++;
 				}
 			}
 		
-			if (a[j] == 1) {
-				System.out.println("O número "+a[j]+" NÃO é primo.");
-			} else if (resto0 <=2) {
-				System.out.println("O número "+a[j]+" é primo!");
+			if (a[i2] == 1) {
+				System.out.println("O número "+a[i2]+" não é primo.");
+			} else if (r<=2) {
+				System.out.println("O número "+a[i2]+" é primo");
 			} else {
-				System.out.println("O número "+a[j]+" NÃO é primo!");
+				System.out.println("O número "+a[i2]+" não é primo");
 			}
-			resto0 = 0;
+			r=0;
 		}
-		in.close();
 		
 	}
 
