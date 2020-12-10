@@ -9,7 +9,7 @@ public class ExercImparPar {
 		b = new int [E];
 	
 		for(i=0; i<E; i++) { 
-				System.out.println("Digite o "+(i+1)+"º valor:");
+				System.out.println("Digite o primeiro valor:");
 				a[i] = in.nextInt();
 				if (a[i] % 2 == 0) {
 					par++;
