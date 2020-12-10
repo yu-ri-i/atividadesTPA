@@ -11,12 +11,12 @@ public class ExercDiferenca {
 		c = new int[TAM];
 		
 		for(i=0; i<TAM; i++) {
-			System.out.println("Digite o primeiro número de A:");
+			System.out.println("Digite o um número de A:");
 			a[i] = in.nextInt();
 		}
 		
 		for(i=0; i<TAM; i++) {
-			System.out.println("Digite o primeiro número de B:");
+			System.out.println("Digite o um número de B:");
 			b[i] = in.nextInt();
 		}
 		
