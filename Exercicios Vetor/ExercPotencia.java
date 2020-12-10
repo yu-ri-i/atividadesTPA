@@ -17,6 +17,6 @@ public class ExercPotencia {
 		for (i=0; i<TAM; i++) {
 			System.out.print(a[i]+"  ");
 		}
-		in.close();
+
 	}
 }
