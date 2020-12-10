@@ -11,16 +11,16 @@ public class ExercDiferenca {
 		c = new int[TAM];
 		
 		for(i=0; i<TAM; i++) {
-			System.out.println("Digite o "+(i+1)+"º elemento de A:");
+			System.out.println("Digite o primeiro elemento de A:");
 			a[i] = in.nextInt();
 		}
 		
 		for(i=0; i<TAM; i++) {
-			System.out.println("Digite o "+(i+1)+"º elemento de B:");
+			System.out.println("Digite o primeiro elemento de B:");
 			b[i] = in.nextInt();
 		}
 		
-		System.out.print("A = 
+		System.out.print("")
 		for(i=0;i<TAM;i++) {
 			System.out.print(a[i]+" ");
 		}
@@ -49,11 +49,11 @@ public class ExercDiferenca {
 		
 		System.out.println("\n");
 		
-		System.out.print("A - B = "); 
+		System.out.print("A-B = "); 
 		for(i=0;i<x;i++) {
 			System.out.print(c[i]+" ");
 		}
-		in.close();
+		
 	}
 
 }
