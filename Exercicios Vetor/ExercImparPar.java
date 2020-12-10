@@ -8,7 +8,7 @@ public class ExercImparPar {
 		b = new int [E];
 	
 		for(i=0; i<E; i++) { 
-				System.out.println("Digite o um número:");
+				System.out.println("Digite um número:");
 				a[i] = in.nextInt();
 				if (a[i] % 2 == 0) {
 					par++;
