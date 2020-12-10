@@ -4,12 +4,11 @@ public class ExercImparPar {
 		Scanner in = new Scanner (System.in);
 		final int E = 20;
 		int i, a[], b[], par=0, impar=0;
-		
 		a = new int [E];
 		b = new int [E];
 	
 		for(i=0; i<E; i++) { 
-				System.out.println("Digite o primeiro valor:");
+				System.out.println("Digite o um número:");
 				a[i] = in.nextInt();
 				if (a[i] % 2 == 0) {
 					par++;
